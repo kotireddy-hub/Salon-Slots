@@ -1,7 +1,10 @@
 import React from 'react';
 import './style.css';
 import Slots from './Slots';
+import { getSalonTimeSlots } from './utils/utils';
 export default function App() {
+  const slots = getSalonTimeSlots(8, 23);
+  console.log(slots, 'slots');
   const SlotList = [
     {
       slotid: 8,
